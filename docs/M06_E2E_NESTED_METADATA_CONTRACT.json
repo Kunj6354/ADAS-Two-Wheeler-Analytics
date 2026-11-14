@@ -1,0 +1,117 @@
+{
+  "contract_id": "M06-E2E",
+  "version": "0.1.0-draft",
+  "status": "DRAFT_NOT_APPROVED",
+  "parent_contract_id": "M06-E2C",
+  "parent_contract_sha256": "e3b24ddb592bb16950e49a4e842b5ed5de731960e5f7da089493920c37f08e1c",
+  "purpose": "Proposed shapes for six nested scientific metadata fields",
+  "type_vocabulary": {
+    "text": "Nonempty string",
+    "object": "Nonempty mapping; internal axis schema unresolved",
+    "finite_number": "Finite int or float; exclude bool",
+    "nonnegative_integer": "Integer >= 0; exclude bool",
+    "finite_number_mapping": "Nonempty mapping of channel names to finite numbers",
+    "text_mapping": "Nonempty mapping of channel names to nonempty strings"
+  },
+  "nested_definitions": {
+    "physical_mounting.axis_mapping": {
+      "fields": {
+        "sensor_frame_id": "text",
+        "vehicle_frame_id": "text",
+        "axis_correspondence": "object",
+        "orientation_convention": "text"
+      },
+      "unresolved": [
+        "Axis sign conventions",
+        "Right-handed coordinate-frame verification",
+        "Physical mounting evidence"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    },
+    "calibration.offset_values": {
+      "fields": {
+        "channel_values": "finite_number_mapping",
+        "calibration_run_id": "text"
+      },
+      "unresolved": [
+        "Required calibration channels",
+        "Calibration method and tolerances"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    },
+    "calibration.offset_units": {
+      "fields": {
+        "channel_units": "text_mapping"
+      },
+      "unresolved": [
+        "Approved channel unit vocabulary",
+        "Channel-to-unit consistency"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    },
+    "timing.sampling_interval_observations": {
+      "fields": {
+        "interval_count": "nonnegative_integer",
+        "minimum": "finite_number",
+        "median": "finite_number",
+        "maximum": "finite_number",
+        "unit": "text"
+      },
+      "unresolved": [
+        "Approved timing unit",
+        "Interval summary calculation method",
+        "Maximum jitter and gap thresholds"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    },
+    "independent_reference.recording_association": {
+      "fields": {
+        "sensor_recording_id": "text",
+        "association_method": "text",
+        "association_evidence_id": "text"
+      },
+      "unresolved": [
+        "Recording identity authority",
+        "Reference association verification"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    },
+    "independent_reference.reference_provenance": {
+      "fields": {
+        "source_identity": "text",
+        "acquisition_record_id": "text",
+        "custody_reference": "text"
+      },
+      "unresolved": [
+        "Chain-of-custody process",
+        "Source authenticity verification",
+        "Evidence retention and access control"
+      ],
+      "status": "DRAFT_UNAPPROVED",
+      "value_verified": false
+    }
+  },
+  "proposed_cross_field_checks": [
+    "Calibration channel values and units have matching keys",
+    "Sampling interval minimum <= median <= maximum",
+    "Sampling count reflects an identified recording",
+    "Axis correspondence uses an approved coordinate convention",
+    "Recording association refers to the actual sensor recording",
+    "Reference provenance resolves to independently verifiable evidence"
+  ],
+  "safety_gates": {
+    "nested_schemas_approved": false,
+    "scientific_thresholds_approved": false,
+    "reference_evidence_verified": false,
+    "semantic_validator_implemented": false,
+    "ground_truth_verified": false,
+    "physical_collection_authorized": false,
+    "model_training_authorized": false,
+    "road_deployment_authorized": false
+  }
+}

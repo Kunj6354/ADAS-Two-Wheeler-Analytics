@@ -1,0 +1,93 @@
+{
+  "schema_id": "M06-E2",
+  "schema_version": "0.1.0-draft",
+  "status": "DRAFT_NOT_APPROVED",
+  "purpose": "Future controlled-acquisition metadata specification",
+  "parent_contract": "M06-E1",
+  "groups": {
+    "sensor_configuration": {
+      "required": [
+        "sensor_model",
+        "device_identifier",
+        "accelerometer_range_g",
+        "gyroscope_range_dps",
+        "accelerometer_output_unit",
+        "gyro_output_semantics",
+        "firmware_sha256",
+        "library_sha256"
+      ],
+      "verification_status": "UNVERIFIED"
+    },
+    "physical_mounting": {
+      "required": [
+        "mount_location",
+        "attachment_description",
+        "axis_mapping",
+        "orientation_reference",
+        "mounting_revision",
+        "mounting_evidence_id"
+      ],
+      "verification_status": "UNVERIFIED"
+    },
+    "calibration": {
+      "required": [
+        "calibration_method",
+        "stationary_condition_evidence",
+        "offset_values",
+        "offset_units",
+        "calibration_outcome",
+        "calibration_evidence_id"
+      ],
+      "verification_status": "UNVERIFIED"
+    },
+    "timing": {
+      "required": [
+        "sensor_clock_id",
+        "timestamp_unit",
+        "timestamp_origin",
+        "sampling_interval_observations",
+        "reference_clock_id",
+        "clock_alignment_method",
+        "alignment_uncertainty_ms"
+      ],
+      "verification_status": "UNVERIFIED"
+    },
+    "independent_reference": {
+      "required": [
+        "reference_source_id",
+        "reference_source_sha256",
+        "reference_acquisition_method",
+        "recording_association",
+        "alignment_evidence_id",
+        "reference_provenance"
+      ],
+      "verification_status": "UNVERIFIED"
+    }
+  },
+  "historical_observations": {
+    "sensor_family": "MPU6050",
+    "accelerometer_units": "nominal_g_from_inspected_library",
+    "gyro_values": "integrated_gyro_angles_not_raw_rates",
+    "timestamp_source": "millis_from_inspected_firmware",
+    "deployed_firmware_verified": false,
+    "mounting_verified": false,
+    "calibration_verified": false,
+    "timebase_alignment_verified": false
+  },
+  "validation_policy": {
+    "required_fields_must_be_present": true,
+    "numeric_values_must_be_finite": true,
+    "boolean_values_not_accepted_as_numbers": true,
+    "hash_fields_require_64_hex_characters": true,
+    "explicit_units_required": true,
+    "unverified_evidence_not_ground_truth": true,
+    "measurement_thresholds_approved": false,
+    "semantic_field_validation_implemented": false
+  },
+  "authorization_gates": {
+    "physical_collection_authorized": false,
+    "independent_ground_truth_verified": false,
+    "model_training_authorized": false,
+    "road_deployment_authorized": false
+  }
+}

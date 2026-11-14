@@ -1,0 +1,20 @@
+﻿# Python environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated runtime assets
+outputs/
+backend/dist/
+backend/build/
+*.egg-info/
+
+# Trained model artifacts
+*.joblib
+*.pkl
+*.pickle
+/.venv-ml-validation/
+/Dataset/Own Bike/

@@ -1,0 +1,12 @@
+# ADAS software-only release environment
+# Tested with Python 3.12.10 on Windows.
+# Exact package pins reflect the verified local environment.
+# Fresh-install acceptance is still required.
+streamlit==1.66.1
+pandas==3.1.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+pyarrow==26.0.1
+pytest==9.2.0

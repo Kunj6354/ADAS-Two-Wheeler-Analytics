@@ -1,0 +1,255 @@
+{
+  "contract_id": "M06-E2C",
+  "version": "0.1.0-draft",
+  "status": "DRAFT_NOT_APPROVED",
+  "parent_schema_id": "M06-E2",
+  "parent_schema_sha256": "dc13fdbcfd72ac3dca2cf9ed2b7e6063bf858397c392feee27eee007f3212132",
+  "field_definitions": {
+    "sensor_configuration": {
+      "sensor_model": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "device_identifier": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "accelerometer_range_g": {
+        "proposed_type": "finite_number",
+        "proposed_unit": "g",
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "gyroscope_range_dps": {
+        "proposed_type": "finite_number",
+        "proposed_unit": "deg/s",
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "accelerometer_output_unit": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "gyro_output_semantics": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "firmware_sha256": {
+        "proposed_type": "sha256",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "library_sha256": {
+        "proposed_type": "sha256",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      }
+    },
+    "physical_mounting": {
+      "mount_location": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "attachment_description": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "axis_mapping": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "orientation_reference": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "mounting_revision": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "mounting_evidence_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      }
+    },
+    "calibration": {
+      "calibration_method": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "stationary_condition_evidence": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "offset_values": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "offset_units": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "calibration_outcome": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "calibration_evidence_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      }
+    },
+    "timing": {
+      "sensor_clock_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "timestamp_unit": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "timestamp_origin": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "sampling_interval_observations": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "reference_clock_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "clock_alignment_method": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "alignment_uncertainty_ms": {
+        "proposed_type": "finite_number",
+        "proposed_unit": "ms",
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      }
+    },
+    "independent_reference": {
+      "reference_source_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "reference_source_sha256": {
+        "proposed_type": "sha256",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "reference_acquisition_method": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "recording_association": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "alignment_evidence_id": {
+        "proposed_type": "text",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      },
+      "reference_provenance": {
+        "proposed_type": "object",
+        "proposed_unit": null,
+        "status": "DRAFT_UNAPPROVED",
+        "value_verified": false
+      }
+    }
+  },
+  "type_vocabulary": {
+    "text": "Nonempty string",
+    "sha256": "Exactly 64 hexadecimal characters",
+    "finite_number": "Finite integer or float; boolean excluded",
+    "object": "Nonempty mapping; nested schema not yet approved"
+  },
+  "proposed_semantic_rules": [
+    "Accelerometer range expressed in g",
+    "Gyroscope configuration range expressed in degrees per second",
+    "Output semantics must identify angle versus angular rate",
+    "Calibration offset values must correspond to their units",
+    "Mounting axis mapping must correspond to sensor orientation",
+    "Sampling intervals must identify their timing units",
+    "Alignment uncertainty recorded in milliseconds",
+    "Reference digest must correspond to separately verified evidence"
+  ],
+  "unresolved_decisions": [
+    "Permitted sensor range values and tolerances",
+    "Approved accelerometer output unit vocabulary",
+    "Approved gyro output semantics vocabulary",
+    "Approved axis mapping and orientation representation",
+    "Approved calibration offset structure and units",
+    "Approved sampling observation structure",
+    "Approved recording association and provenance structure",
+    "Approved clock synchronization accuracy thresholds",
+    "Independent reference authenticity verification"
+  ],
+  "policy": {
+    "field_types_approved": false,
+    "units_approved": false,
+    "nested_schemas_approved": false,
+    "semantic_validator_implemented": false,
+    "evidence_authenticity_verified": false,
+    "ground_truth_verified": false,
+    "physical_collection_authorized": false,
+    "model_training_authorized": false,
+    "road_deployment_authorized": false
+  }
+}
